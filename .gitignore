@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+*.log
+tmp/
+.mypy_cache
+__pycache__
+secrets
+runs
+models
+transformers
+todo.txt
+data
+new_emoji_index.txt
