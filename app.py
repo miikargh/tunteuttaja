@@ -31,7 +31,7 @@ class Config:
     MODEL_DIR: str = os.environ.get(
         "MODEL_DIR", "./models/demo-model"
     )
-    LABELS_PATH: str = os.environ.get("LABELS_PATH", "./demo-model/labels.txt")
+    LABELS_PATH: str = os.environ.get("LABELS_PATH", "./models/demo-model/labels.txt")
 
 
 cfg = Config()
