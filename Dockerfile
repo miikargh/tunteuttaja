@@ -12,12 +12,11 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY ./emojify ./emojify
+COPY ./tunteuttaja ./tunteuttaja
 COPY ./app.py .
-COPY ./labels.txt .
+COPY ./models/demo-model ./model
 
-ENV MODEL_DIR=/model
-ENV LABELS_PATH=./labels.txt
+ENV MODEL_DIR=./model
+ENV LABELS_PATH=./model/labels.txt
 
 CMD uvicorn app:app --host=0.0.0.0 --port=9090
-# CMD touch kek && tail -f kek
