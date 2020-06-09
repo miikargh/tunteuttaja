@@ -1,0 +1,16 @@
+# Tunteuttaja
+Training script and API for a transformer that takes in Finnish text and spits
+out emojis.
+
+## Quick start guide
+If you have docker installed on your computer the fastest way to test the API is
+to run the following command (the docker file is quite big because it includes
+the transformer model):
+
+```sh
+$ docker run -itd -p 9090:9090 miikargh/tunteuttaja:0.0.1
+```
+
+The above command will pull and run the image and run the API on port 9090. Just
+head to http://localhost:9090/docs to test the API out!
+
