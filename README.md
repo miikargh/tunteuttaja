@@ -14,3 +14,6 @@ $ docker run -itd -p 9090:9090 miikargh/tunteuttaja:0.1.0
 The above command will pull and run the image and run the API on port 9090. Just
 head to http://localhost:9090/app/index.html to test it out! Alternatively you
 can check http://localhost:9090/docs out for the API documentation.
+
+## Training
+Coming soon...
